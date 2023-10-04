@@ -122,10 +122,13 @@
 .info {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .info .temp {
-    flex: 1;
+    /* flex: 1; */
     text-align: center;
+    width: 80%;
 }
 .info .vento {
     flex: 1;
