@@ -6,9 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Clima</h1>
+
+    <div class="background-container"></div>
+
+    <div class="loadingContainer">
+        <div class="loadingInitial"></div>
+    </div>
+
+<div class="container">
+        <div class="header">
+            <h1>Olá, bom dia! </h1>
+            <h3>Vamos ver como está o clima na sua cidade neste momento?</h3>
+        </div>
 
     <form class="busca">
         <input type="search" id="searchInput" />
@@ -24,11 +36,28 @@
                 <div class="tempInfo">-- <sup>ºC</sup></div>
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" />
             </div>
+
             <div class="vento">
-                <div class="ventoTitulo">Vento</div>
+                <div class="ventoTitulo">vento</div>
                 <div class="ventoInfo">-- <span>km/h</span></div>
-                <div class="ventoArea">
-                    <div class="ventoPonto" style="transform: rotate(0deg)"></div>
+                <div class="img-1-2">
+                    <img class="wind" src="img/windlogo.png">
+                    <img class="wind-position" src="img/ventodirection.png" style="transform: rotate(0deg)">
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="feels-like">
+                    <div class="feels-like-titulo">sensação térmica</div>
+                    <div class="feels-like-info">--<sup>ºC</sup></div>
+                </div>
+                <div class="temp-max">
+                    <div class="temp-max-titulo">máx.</div>
+                    <div class="temp-max-info">--<sup>ºC</sup></div>
+                </div>
+                <div class="temp-min">
+                    <div class="temp-min-titulo">min.</div>
+                    <div class="temp-min-info">--<sup>ºC</sup></div>
                 </div>
             </div>
         </div>
@@ -36,8 +65,8 @@
 
     <div class="aviso"></div>
 
-    <footer>Criado por Diego Medeiros</footer>
-
+    <footer>©2023 - developed by <a href="https://www.linkedin.com/in/diego-medeiros-dev/" target="_blank"><em>Diego Medeiros</em></a>.</footer>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
